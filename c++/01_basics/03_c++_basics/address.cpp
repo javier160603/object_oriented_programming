@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main(){
 	string food = "Pizza";	// String variable

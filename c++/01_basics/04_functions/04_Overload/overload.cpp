@@ -1,13 +1,14 @@
-#include<iostream>
+#include <iostream>
 #include "functions.hpp"
 
+using std::cout;
+using std::endl;
 
-using namespace std;
+int main(){
+    cout << maxx(23, 12, -24) << endl;
+    cout << maxx(1, 2) << endl;
+    cout << maxx(0.5, 0.9) << endl;
+    cout << maxx('z', 'Z') << endl;
 
-int main()
-{
-    cout<<maxx(1,2,3)<<endl;
-    cout<<maxx(1,2)<<endl;
-    cout<<maxx(2.3,3.4)<<endl;
-    cout<<maxx('a','d')<<endl;
+    return 0;
 }

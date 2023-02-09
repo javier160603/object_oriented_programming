@@ -4,31 +4,29 @@
 #include <iostream>
 
 class Drill{
-    
     private:
-	/* Attributes */
 	bool state;
 	float temp;
 	float speed;
 
-	/* Mutators */
+        /* Mutators */
 	void setState(bool);
 	void setTemp(float);
 	void setSpeed(float);
 
     public:
-	Drill();
-	
+	Drill(bool, float, float);
+
 	/* Accessors */
 	bool getState() const;
 	float getTemp() const;
 	float getSpeed() const;
 
-	/* Other */
-	void toggleState() ;
-	void coolDown() ;
-        void printStatus() const;	
-	void rotate(float);
+	/* Others */
+	void toggleState();
+	void coolDown();
+	void printStatus();
+	void spin(float);
 
 };
 

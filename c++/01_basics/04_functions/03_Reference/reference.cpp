@@ -1,19 +1,23 @@
 #include <iostream>
 #include "change.hpp"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main(){
-   int n1 = 3;
-   int n2 = 7;
+   int n1 = 10;
+   int n2 = 20;
 
-   cout << "Original order: n1 = " << n1 << " n2 = " << n2 << endl;
+   cout << "Original: " << n1 << ", " << n2 << endl;
 
-   changeAlias(n1, n2);
-   cout << "Change by Alias: n1 = " << n1 << " n2 = " << n2 << endl;
+   changeValue(n1, n2);
+   cout << "Value: " << n1 << ", " << n2 << endl;
 
    changePointer(&n1, &n2);
-   cout << "Change by Pointer: n1 = " << n1 << " n2 = " << n2 << endl;
+   cout << "Pointer: " << n1 << ", " << n2 << endl;
 
-   return 0;
+   changeAlias(n1, n2);
+   cout << "Alias: " << n1 << ", " << n2 << endl;
+
+    return 0;
 }
